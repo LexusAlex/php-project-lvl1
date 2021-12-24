@@ -20,3 +20,7 @@ brain-games:
 	docker-compose run --rm php-cli-debian ./bin/brain-games
 composer-validate:
 	docker-compose run --rm php-cli-debian composer validate
+docker-lint:
+	docker-compose run --rm php-cli-debian composer exec --verbose phpcs -- --standard=PSR12 src bin
+lint:
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
