@@ -1,0 +1,20 @@
+{
+  "name": "hexlet/code",
+  "description": "test project",
+  "license": "proprietary",
+  "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexsey Shmelev",
+            "email": "alexsey_89@bk.ru"
+        }
+    ],
+  "bin": [
+    "bin/brain-games"
+  ],
+    "require": {}
+}
