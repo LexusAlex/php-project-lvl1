@@ -16,8 +16,12 @@ docker-down:
 # Проверить обновления composer
 composer-install:
 	docker-compose run --rm php-cli-debian composer install
+composer-autoload:
+	docker-compose run --rm php-cli-debian composer dump-autoload
 brain-games:
 	docker-compose run --rm php-cli-debian ./bin/brain-games
+brain-even:
+	docker-compose run --rm php-cli-debian ./bin/brain-even
 composer-validate:
 	docker-compose run --rm php-cli-debian composer validate
 docker-lint:
